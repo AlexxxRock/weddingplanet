@@ -626,7 +626,7 @@ table {
     color: #333;
     line-height: 2rem;
 }
-.section-block-row.reverse .section-block-small {
+.section-block:nth-child(even) .section-block-small {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -892,10 +892,12 @@ table {
     text-align: center;
     padding: .9rem 1rem;
     font-size: .95rem;
+    -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
 .load-more:hover {
-    box-shadow: 2px 3px 10px rgba(0,0,0, .4);
+    -webkit-box-shadow: 2px 3px 10px rgba(0,0,0, .4);
+            box-shadow: 2px 3px 10px rgba(0,0,0, .4);
 }
 
 
@@ -914,8 +916,10 @@ table {
 .circle-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
 }
 .review-item {
     margin: 1.5rem 0;
@@ -966,7 +970,10 @@ table {
 }
 
 
-/* Contcts */
+/* Contacts */
+.contacts .section-block-small {
+    padding: 1rem 0;
+}
 .contacts h5 {
     margin: 1rem 0 .5rem 0;
 }
@@ -985,7 +992,9 @@ table {
     color: #333;
 }
 .contacts .footer-msgrs-list {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 0;
 }
 .contacts .footer-msgrs-item {
@@ -1074,6 +1083,9 @@ table {
     border-spacing: 0;
     line-height: 1.4rem;
     margin: 1.2rem 0;
+    overflow-x: scroll;
+    max-width: 100%;
+    display: block;
 }
 th {
     background: #ddd;
@@ -1792,11 +1804,6 @@ table tbody tr:nth-child(even) td {
     .banner-play-btn-wrap {
         margin: 2rem 0 0 0;
     }
-    /* .play-btn::after {
-        width: 60px;
-        background-size: 280px;
-        background-position: -146px center;
-    } */
     .play-btn,
     .pulse {
         font-size: 4.8rem;
@@ -1895,6 +1902,28 @@ table tbody tr:nth-child(even) td {
             -ms-flex-pack: center;
                 justify-content: center;
     }
+    .contacts .footer-social {
+        text-align: left;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+@media screen and (max-width: 800px) {
+    .col.review-item-left,
+    .col.review-item-right {
+        width: 100%
+    }
+    .col.review-item-right {
+        margin: 1rem 0 0 0;
+    }
+    .review-item-title {
+        width: 100%;
+    }
+    .circle-img-wrap {
+        max-width: 200px;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1919,6 +1948,31 @@ table tbody tr:nth-child(even) td {
         font-size: 2rem;
         line-height: 2rem;
     }
+    h2, .h2, .content h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin: 0 0 1rem 0;
+    }
+    h3, .h3, .content h3 {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin: 2rem 0;
+    }
+    h4, .h4, .content h4 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin: 0 0 .8rem 0;
+    }
+    h5, .h5, .content h5 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin: 0 0 .75rem 0;
+    }
+    h6, .h6, .content h6 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0 0 .7rem 0;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -1932,4 +1986,8 @@ table tbody tr:nth-child(even) td {
     .work-item-rm {
         max-width: 70%;
     }
+    .work-item-title-wrap {
+        line-height: 2rem;
+    }
+}
 }
