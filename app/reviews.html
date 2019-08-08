@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="assets/tpl/fonts/fontello/css/fontello.css" media="screen">
+
+    <link rel="stylesheet" href="assets/tpl/css/components/uibox-normalize/css/uibox-normalize.css" media="screen">
+    <link rel="stylesheet" href="assets/tpl/css/components/uibox-grid/css/uibox-grid.css" media="screen">
+
+    <link rel="stylesheet" href="assets/tpl/css/jquery.fancybox.css" media="screen">
+    <link rel="stylesheet" href="assets/tpl/css/slick.css" media="screen">
+    <link rel="stylesheet" href="assets/tpl/css/slick-theme.css" media="screen">
+
+    <link rel="stylesheet" href="assets/tpl/css/style.css" media="screen">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <div class="uibox-row header-row">
+                <div class="col s3 page-header-left">
+                    <a class="logo-link" href="index.html">
+                        <img class="logo" src="assets/tpl/img/logo.png" alt="{$_modx->config.site_name}">
+                    </a>
+                </div>
+                <div class="col s6 page-header-center">
+                    <div class="uibox-row">
+                        <div class="main-nav" tabindex="-1">
+                            <button class="nav-toggle">
+                                <span class="nav-icon"></span>
+                                <span class="nav-icon"></span>
+                                <span class="nav-icon"></span>
+                            </button>
+                            <nav class="nav">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">О нас</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Услуги</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="portfolio.html">Портфолио</a>
+                                    </li>
+                                    <li class="nav-item current">
+                                        <a class="nav-link" href="reviews.html">Отзывы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">Блог</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacts.html">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="uibox-row col s3 page-header-right">
+                    <button class="btn icon-text-btn icon-contacts get-contacts-btn" data-fancybox="" data-src="#page-contacts">
+                        <i class="icon icon-comment-empty"></i>
+                        <span class="btn-title">Контакты</span>
+                    </button>
+                    <div id="page-contacts" class="uibox-row header-contacts">
+                        <h4 class="h3 contacts-title">Контакты</h4>
+                        <div class="contacts-row">
+                            <div class="contacts-subtitle">Телефон</div>
+                            <ul class="phones">
+                                <li class="phones-item">
+                                    <a class="phones-link" href="tel:+380939265679">
+                                        <i class="icon icon-phone"></i>
+                                        <span>+38 093 926 56 79</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="contacts-row">
+                            <div class="header-msgrs">
+                                <div class="contacts-subtitle">Мессенджеры</div>
+                                <ul class="msgrs header-msgrs-list">
+                                    <li class="msgrs-item header-msgrs-item">
+                                        <a class="msgrs-link header-msgrs-link" href="">
+                                            <span class="icon-viber-wrap">
+                                                <i class="icon icon-viber"></i>
+                                                <i class="icon icon-comment-inv-alt2"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="msgrs-item header-msgrs-item">
+                                        <a class="msgrs-link header-msgrs-link" href="">
+                                            <i class="icon icon-telegram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contacts-row feedback-row">
+                            <div class="contacts-subtitle">Обратная связь</div>
+                            <button class="btn btn-secondary" data-fancybox="" data-src="#feedback-modal">Написать нам</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="banner-layout">
+            <div class="banner-body" style="background: url('files/reviews-bg.jpg') no-repeat;">
+                <div class="container banner-container">
+                    <div class="banner-content">
+                        <div class="banner-header">
+                            <h1 class="banner-title">Отзывы наших клиентов</h1>
+                            <div class="banner-descr">Свадьба вашей мечты<br> призыв смотреть видеоролик</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-player-layout"></div>
+            </div>
+        </div>
+        
+        
+
+        <div class="reviews-layout">
+            <div class="container">
+                <div class="uibox-row reviews">
+                    <div class="col s12 review-item">
+                        <div class="col s12 uibox-row review-item-inner">
+                            <div class="col s4 review-item-left">
+                                <div class="circle-img-wrap">
+                                    <img class="circle-img" src="files/ava-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col s8 review-item-right">
+                                <div class="uibox-row review-item-header">
+                                    <h2 class="h2 review-item-title">Андрей и Мария</h2>
+                                    <div class="date-wrap">
+                                        <i class="icon icon-calendar-1"></i>
+                                        <span class="date">04.08.2019</span>
+                                    </div>
+                                </div>
+                                <div class="review-item-body">
+                                    <p>Изначально мы пришли к Wedding Planet в больших сомнениях и с идеей о нежной "Зелено-белой" свадьбе. Представляете? Вот и мы сейчас не верим))) Ребята проявили себя в роли хороших психологов, и все таки нашли ту самую, "нашу" концепцию. Всё, абсолютно всё- цвета, цветы, церемония, музыка, развлечения- было прям про нас и для нас!</p>
+                                    <p>Отдельно хочется отметить сам процесс подготовки, который длился 6 месяцев. Мы с мужем (тогда еще женихом) много работали, и в Украине бывали редко, при этом мы были абсолютно спокойны, ведь все "шло по плану" без нас. И это очень круто! Я вообще из тех невест, которая испытывает нечеловеческий ужас, когда приходится выбирать между коралловым и нежно-лососевым. Не мое это)) Wedding Planet сняли с нас миллион задач. И даже мое платье мы выбирали вместе!</p>
+                                    <p>Свадьба прошла на высшем уровне! Мы смогли полностью погрузиться в чувства - плакали и хохотали, постоянно танцевали, целовались и радовались нашему дню) Все было очень красиво- декор, площадка, свадебная церемония и мы:)</p>
+                                    <p>Мы счастливы очень! Спасибо Wedding Planet мы вас любим!</p>
+                                </div>
+                                <div class="review-item-footer">
+                                    <a class="btn btn-default" href="">Смотреть свадьбу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 review-item">
+                        <div class="col s12 uibox-row review-item-inner">
+                            <div class="col s4 review-item-left">
+                                <div class="circle-img-wrap">
+                                    <img class="circle-img" src="files/ava-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col s8 review-item-right">
+                                <div class="uibox-row review-item-header">
+                                    <h2 class="h2 review-item-title">Андрей и Мария</h2>
+                                    <div class="date-wrap">
+                                        <i class="icon icon-calendar-1"></i>
+                                        <span class="date">04.08.2019</span>
+                                    </div>
+                                </div>
+                                <div class="review-item-body">
+                                    <p>Изначально мы пришли к Wedding Planet в больших сомнениях и с идеей о нежной "Зелено-белой" свадьбе. Представляете? Вот и мы сейчас не верим))) Ребята проявили себя в роли хороших психологов, и все таки нашли ту самую, "нашу" концепцию. Всё, абсолютно всё- цвета, цветы, церемония, музыка, развлечения- было прям про нас и для нас!</p>
+                                    <p>Отдельно хочется отметить сам процесс подготовки, который длился 6 месяцев. Мы с мужем (тогда еще женихом) много работали, и в Украине бывали редко, при этом мы были абсолютно спокойны, ведь все "шло по плану" без нас. И это очень круто! Я вообще из тех невест, которая испытывает нечеловеческий ужас, когда приходится выбирать между коралловым и нежно-лососевым. Не мое это)) Wedding Planet сняли с нас миллион задач. И даже мое платье мы выбирали вместе!</p>
+                                    <p>Свадьба прошла на высшем уровне! Мы смогли полностью погрузиться в чувства - плакали и хохотали, постоянно танцевали, целовались и радовались нашему дню) Все было очень красиво- декор, площадка, свадебная церемония и мы:)</p>
+                                    <p>Мы счастливы очень! Спасибо Wedding Planet мы вас любим!</p>
+                                </div>
+                                <div class="review-item-footer">
+                                    <a class="btn btn-default" href="">Смотреть свадьбу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 review-item">
+                        <div class="col s12 uibox-row review-item-inner">
+                            <div class="col s4 review-item-left">
+                                <div class="circle-img-wrap">
+                                    <img class="circle-img" src="files/ava-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col s8 review-item-right">
+                                <div class="uibox-row review-item-header">
+                                    <h2 class="h2 review-item-title">Андрей и Мария</h2>
+                                    <div class="date-wrap">
+                                        <i class="icon icon-calendar-1"></i>
+                                        <span class="date">04.08.2019</span>
+                                    </div>
+                                </div>
+                                <div class="review-item-body">
+                                    <p>Изначально мы пришли к Wedding Planet в больших сомнениях и с идеей о нежной "Зелено-белой" свадьбе. Представляете? Вот и мы сейчас не верим))) Ребята проявили себя в роли хороших психологов, и все таки нашли ту самую, "нашу" концепцию. Всё, абсолютно всё- цвета, цветы, церемония, музыка, развлечения- было прям про нас и для нас!</p>
+                                    <p>Отдельно хочется отметить сам процесс подготовки, который длился 6 месяцев. Мы с мужем (тогда еще женихом) много работали, и в Украине бывали редко, при этом мы были абсолютно спокойны, ведь все "шло по плану" без нас. И это очень круто! Я вообще из тех невест, которая испытывает нечеловеческий ужас, когда приходится выбирать между коралловым и нежно-лососевым. Не мое это)) Wedding Planet сняли с нас миллион задач. И даже мое платье мы выбирали вместе!</p>
+                                    <p>Свадьба прошла на высшем уровне! Мы смогли полностью погрузиться в чувства - плакали и хохотали, постоянно танцевали, целовались и радовались нашему дню) Все было очень красиво- декор, площадка, свадебная церемония и мы:)</p>
+                                    <p>Мы счастливы очень! Спасибо Wedding Planet мы вас любим!</p>
+                                </div>
+                                <div class="review-item-footer">
+                                    <a class="btn btn-default" href="">Смотреть свадьбу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn load-more" href="">Показать еще</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-block">
+            <div class="feedback-form-block">
+                <div class="feedback-form-inner">
+                    <div class="header-block">
+                        <h2 class="header-block-title">Давайте обсудим вашу свадьбу</h2>
+                        <div class="header-block-text">Отправьте нам собщение и мы свяжемся с вами в ближайшее время</div>
+                    </div>
+                    <form class="feedback-form" action="fakepath" method="POST">
+                        <div class="form-group">
+                            <input class="input-text" type="text" name="name" placeholder="Ваше имя">
+                            <div class="error-msg">Заполните поле</div>
+                        </div>
+                        <div class="form-group">
+                            <input class="input-text" type="text" name="name" placeholder="Ваш телефон">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="textarea" name="msg" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="form-group center">
+                            <button class="btn btn-default send-btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <div class="uibox-row">
+                <div class="col s3 footer-left">
+                    <div class="footer-title">2010-2019 © Wedding planet</div>
+                    <div class="footer-col footer-text">
+                        <div class="cpr">На сайте используются фотографии, снятые исключительно в рамках проектов нашего агентства. Мы рады, если вам пришлись по вкусу снимки. Просто хотели напомнить, что они защищаются авторским правом и нашим юридическим партнером.</div>
+                    </div>
+                </div>
+                <div class="col s5 offset-1 footer-center">
+                    <div class="footer-title">Мы в социальных сетях</div>
+                    <div class="footer-col">
+                        <ul class="footer-social">
+                            <li class="footer-social-item">
+                                <a class="footer-social-link" href="">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a class="footer-social-link" href="">
+                                    <i class="icon icon-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a class="footer-social-link" href="">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s3 footer-right">
+                    <div class="footer-title">Находимся в харькове, работаем по всему миру</div>
+                    <div class="footer-col">
+                        <ul class="footer-phones">
+                            <li class="footer-phones-item">
+                                <a class="footer-phones-link" href="tel:+380939265679">+38 093 926 56 79</a>
+                            </li>
+                        </ul>
+                        <ul class="msgrs footer-msgrs-list">
+                            <li class="msgrs-item footer-msgrs-item">
+                                <a class="msgrs-link footer-msgrs-link" href="">
+                                    <span class="icon-viber-wrap">
+                                        <i class="icon icon-viber"></i>
+                                        <i class="icon icon-comment-inv-alt2"></i>
+                                    </span>
+                                    
+                                    <span class="msgrs-title">Viber</span>
+                                </a>
+                            </li>
+                            <li class="msgrs-item footer-msgrs-item">
+                                <a class="msgrs-link footer-msgrs-link" href="">
+                                    <i class="icon icon-telegram"></i>
+                                    <span class="msgrs-title">Telegram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="feedback-modal" class="modal feedback-modal">
+        <div class="modal-body">
+            <div class="modal-header">
+                <div class="header-block">
+                    <h2 class="header-block-title">Связь с нами</h2>
+                    <div class="header-block-text">Отправьте нам собщение и мы свяжемся с вами в ближайшее время</div>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="form-wrap">
+                    <form class="feedback-form" action="fakepath" method="POST">
+                        <div class="form-group">
+                            <input class="input-text" type="text" name="name" placeholder="Ваше имя">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="input-text" type="text" name="name" placeholder="Ваш телефон">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="textarea" name="msg" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="form-group center">
+                            <button class="btn btn-default send-btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/tpl/js/jquery.fancybox.js"></script>
+    <script src="assets/tpl/js/slick.js"></script>
+    <script src="assets/tpl/js/main.js"></script>
+</body>
+</html>

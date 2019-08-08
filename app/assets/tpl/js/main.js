@@ -100,13 +100,16 @@
 
 $(document).ready(function(){
 
-    new FluentMenu({
-        menu: '.main-nav',
-        responsive: [{
-            breakpoint: 1024,
-            mode: 'mobile'
-        }]
-    })
+    var ww = document.documentElement.clientWidth
+    if (ww <= 1024) {
+        new FluentMenu({
+            menu: '.main-nav',
+            responsive: [{
+                breakpoint: 1024,
+                mode: 'mobile'
+            }]
+        })
+    }
 
     // Banner video
     $('.play-btn').on('click', function(e){

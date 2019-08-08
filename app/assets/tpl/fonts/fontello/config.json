@@ -73,6 +73,18 @@
       "search": [
         "viber"
       ]
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "43e4647c57186b5e06874621b5e665be",
+      "css": "calendar-1",
+      "code": 59398,
+      "src": "linecons"
     }
   ]
 }
