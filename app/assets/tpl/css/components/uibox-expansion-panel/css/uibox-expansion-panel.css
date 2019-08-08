@@ -1,0 +1,36 @@
+.uibox-expansion-panel {
+    position: relative;
+    display: block;
+    margin: 0;
+    transition: margin 150ms cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.expansion-panel-header {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+    min-height: 48px;
+}
+.expansion-panel-body {
+    padding: 0 24px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease 0s;
+}
+.uibox-expansion-panel.active {
+    margin: 0 0 1rem 0;
+}
+.uibox-expansion-panel-layout .uibox-expansion-panel.active:last-child {
+    margin: 1rem 0 0 0;
+}
+.uibox-expand {
+    position: absolute;
+    right: 1rem;
+    transition: all 0.15s ease 0s;
+}
+.uibox-expansion-panel.active .uibox-expand {
+    transform: rotate(180deg);
+}

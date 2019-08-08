@@ -1,0 +1,46 @@
+.uibox-switch {
+    display: inline-flex;
+}
+.uibox-switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.uibox-switch-native {
+    display: none;
+}
+.uibox-switch-body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 34px;
+    height: 14px;
+    border-radius: 7px;
+    opacity: .38;
+    background: #000;
+    transition: all 0.1s ease 0s;
+}
+.uibox-switch-btn {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 10px solid;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    border-color: #fff;
+    transition: all 0.1s ease 0s;
+}
+.uibox-switch-label input[type="checkbox"]:checked + .uibox-switch-layout .uibox-switch-btn {
+    left: calc(100% - 20px);
+    border-color: #4db6ac;
+    opacity: 1;
+}
+.uibox-switch-label input[type="checkbox"]:checked + .uibox-switch-layout .uibox-switch-body {
+    background: #b2dfdb;
+    opacity: 1;
+}

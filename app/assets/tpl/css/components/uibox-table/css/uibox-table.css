@@ -1,0 +1,106 @@
+.uibox-table-layout {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+}
+.uibox-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tr.uibox-table-header-row {
+    height: 56px;
+}
+.uibox-table th {
+    text-align: left;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e0e0e0;
+}
+.uibox-table tr th:first-child,
+.uibox-table tr td:first-child {
+    padding: 0 0 0 1.5rem;
+}
+.uibox-table tbody tr {
+    height: 48px;
+}
+.uibox-table td {
+    border-bottom: 1px solid #e0e0e0;
+}
+.uibox-table tr:last-child td {
+    border-bottom: none;
+}
+.uibox-table-pagin-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 1rem 10px 1rem;
+}
+.uibox-select-container {
+    min-width: 110px;
+}
+.uibox-paginator-range-actions {
+    display: flex;
+    align-items: center;
+}
+.uibox-paginator-range-label {
+    font-size: 0.9rem;
+    margin: 0 20px 0 30px;
+}
+.uibox-paginator-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    margin: 0 0 0 5px;
+    text-align: center;
+}
+
+.uibox-custom-table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.custom-table-header {
+    width: 100%;
+}
+.custom-table-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    background: #fff;
+}
+.custom-table-header .custom-table-row {
+    height: 56px;
+}
+.custom-table-header .custom-table-row .custom-table-th:first-child,
+.custom-table-body .custom-table-row .custom-table-td:first-child {
+    padding: 0 0 0 1.5rem;
+}
+.custom-table-th {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.custom-table-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-table-body > div {
+    width: 100%;
+}
+.custom-table-body .custom-table-row {
+    height: 48px;
+}
+.custom-table-body .smooth-dnd-draggable-wrapper:last-child .custom-table-row {
+    border-bottom: none;
+}
+.custom-table-td {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}

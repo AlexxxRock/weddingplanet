@@ -1,0 +1,52 @@
+.uibox-card {
+    position: relative;
+}
+.uibox-card-wrap {
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.uibox-card-media-wrap {
+    line-height: 1px;
+    cursor: pointer;
+}
+.uibox-card-img {
+    width: 100%;
+}
+.uibox-card-primary {
+    cursor: pointer;
+    padding: 1rem;
+}
+.uibox-card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    line-height: 2rem;
+}
+.uibox-card-subtitle {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    letter-spacing: .00714em;
+}
+.uibox-card-secondary {
+    padding: 0 1rem 8px;
+    line-height: 1.25rem;
+    font-weight: 400;
+    font-size: .875rem;
+}
+.uibox-card-secondary p {
+    margin: 0;
+    line-height: 1.25rem;
+    font-weight: 400;
+    font-size: .875rem;
+}
+.uibox-card-action-btns {
+    padding: 8px;
+}
+.uibox-card-actions {
+    justify-content: space-between;
+}

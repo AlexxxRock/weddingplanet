@@ -1,0 +1,24 @@
+.uibox-checkbox {
+    display: inline-flex;
+}
+.uibox-checkbox-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.uibox-checkbox-native {
+    display: none;
+}
+.uibox-checkbox-on {
+    display: none;
+}
+.uibox-checkbox-off {
+    display: inline-flex;
+}
+.uibox-checkbox-label input[type="checkbox"]:checked + .uibox-checkbox-layout .uibox-checkbox-on {
+    display: inline-flex;
+}
+.uibox-checkbox-label input[type="checkbox"]:checked + .uibox-checkbox-layout .uibox-checkbox-off {
+    display: none;
+}

@@ -1,0 +1,9 @@
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

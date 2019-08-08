@@ -1,0 +1,24 @@
+.uibox-radio {
+    display: inline-flex;
+}
+.uibox-radio-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.uibox-radio-native {
+    display: none;
+}
+.uibox-radio-on {
+    display: none;
+}
+.uibox-radio-off {
+    display: inline-flex;
+}
+.uibox-radio-label input[type="radio"]:checked + .uibox-radio-layout .uibox-radio-on {
+    display: inline-flex;
+}
+.uibox-radio-label input[type="radio"]:checked + .uibox-radio-layout .uibox-radio-off {
+    display: none;
+}

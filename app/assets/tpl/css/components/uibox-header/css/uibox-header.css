@@ -1,0 +1,14 @@
+.uibox-header {
+    position: relative;
+    padding: 0.8rem 0;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+    z-index: 1;
+}
+.uibox-logo {
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}

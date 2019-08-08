@@ -1,0 +1,16 @@
+.uibox-default-btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px;
+    padding: 0.7rem 0.6rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}

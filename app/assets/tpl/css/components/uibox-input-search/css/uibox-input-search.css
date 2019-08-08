@@ -1,0 +1,72 @@
+.uibox-input-search-container {
+    position: relative;
+}
+.uibox-inputs-wrap {
+    position: relative;
+}
+.uibox-search-wrap {
+    display: flex;
+}
+.uibox-input-search {
+    border: none;
+    outline: none;
+    position: relative;
+    background: transparent;
+    height: 30px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #9e9e9e;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+.search-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+.uibox-search-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: .8rem;
+    transition: all .2s ease 0s;
+}
+.uibox-input-search-float {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    left: 0;
+    bottom: 7px;
+    transition: all .2s ease 0s;
+}
+.uibox-search-label .material-icons {
+    transition: all .2s ease 0s;
+    font-size: 1rem;
+    margin: 0 5px 0 0;
+}
+.uibox-input-search-float .material-icons {
+    transition: all .2s ease 0s;
+    font-size: 1.3rem;
+    margin: 0 5px 0 0;
+}
+.uibox-input-search:focus,
+.uibox-input-search:focus + .search-btn {
+    border-color: #2196f3;
+    box-shadow: 0 1px 0 0 #2196f3;
+}
+.uibox-inputs-wrap.active .uibox-input-txt-label-float,
+.uibox-input-search:focus + .uibox-input-search-label-float {
+    bottom: 100%;
+    font-size: .8rem;
+    color: #2196f3;
+}
+.uibox-inputs-wrap.active .uibox-input-search-label-float .material-icons,
+.uibox-input-search:focus + .uibox-input-search-label-float .material-icons {
+    bottom: 100%;
+    font-size: 1rem;
+    color: #2196f3;
+}

@@ -1,0 +1,135 @@
+.clr {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+.hide-on-small-only {
+
+}
+.hide-on-med-only {
+
+}
+.hide-on-med-and-down {
+
+}
+.hide-on-med-and-up {
+
+}
+.hide-on-large-only {
+
+}
+.show-on-small {
+
+}
+.show-on-medium {
+
+}
+.show-on-large {
+
+}
+.show-on-medium-and-up {
+
+}
+.show-on-medium-and-down {
+
+}
+
+
+
+
+.block-align-start {
+    justify-content: flex-start;
+}
+.block-align-center {
+    justify-content: center;
+}
+.block-align-end {
+    justify-content: flex-end;
+}
+.block-align-between {
+    justify-content: space-between;
+}
+.block-align-around {
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+.center-all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.valign-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.valign-start {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+}
+.valign-end {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+.valign-stretch {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.talign-left {
+    text-align: left;
+}
+.talign-center {
+    text-align: center;
+}
+.talign-right {
+    text-align: right;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

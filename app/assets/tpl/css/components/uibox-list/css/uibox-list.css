@@ -1,0 +1,12 @@
+.list-container {
+    background: #fff;
+    border-right: 1px solid #ddd;
+    height: 93.5vh;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 10px;
+}

@@ -1,0 +1,48 @@
+.uibox-accordion-layout {
+    width: 100%
+}
+.uibox-accord-header {
+    position: relative;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+}
+.uibox-accord-title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.uibox-accordion-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+.uibox-accordion-arrow .material-icons {
+    font-size: 1.3rem;
+}
+.uibox-accord-body {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.uibox-item-accord-wrap.active .uibox-accordion-arrow {
+    transform: rotate(180deg);
+}
+.uibox-accord-list {
+    margin: 0;
+}
+.uibox-accord-list li {
+    margin: 0;
+    list-style: none;
+    padding: 0.3rem 0 0.3rem 1rem;
+    font-size: 0.9rem;
+}
+.uibox-accord-list li a {
+    text-decoration: none;
+    display: block;
+}

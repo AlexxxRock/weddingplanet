@@ -1,0 +1,10 @@
+.uibox-icon-btn {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

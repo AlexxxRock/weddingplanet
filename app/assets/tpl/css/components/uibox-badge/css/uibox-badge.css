@@ -1,0 +1,9 @@
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: .14rem .3rem;
+    border-radius: 2px;
+    z-index: 100;
+    text-align: center;
+}

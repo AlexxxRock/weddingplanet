@@ -1,0 +1,8 @@
+.uibox-container {
+    width: 95%;
+    margin: auto;
+}
+.uibox-row {
+    display: flex;
+    flex-wrap: wrap;
+}
