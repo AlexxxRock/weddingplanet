@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,8 @@
     <title>Document</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
 
     <link rel="stylesheet" href="assets/tpl/fonts/fontello/css/fontello.css" media="screen">
 
@@ -121,7 +119,7 @@
         <div class="banner-layout">
             <div class="banner-body" style="background: url('files/dreaming-bride.jpg') no-repeat;">
                 <div class="container banner-container">
-                    <div class="banner-content">
+                    <div class="banner-content animate bottom-to-top">
                         <div class="banner-header">
                             <h1 class="banner-title">Контакты<br> Wedding Planet</h1>
                             <div class="banner-descr">Мы находимся в Харькове, работаем по всему миру, воплощаем в жизнь праздники мечты.</div>
@@ -209,12 +207,16 @@
                         <div class="header-block-text">Отправьте нам собщение и мы свяжемся с вами в ближайшее время</div>
                     </div>
                     <form class="feedback-form" action="fakepath" method="POST">
+                        <div class="form-group fly">
+                            <input class="input-text" type="text" name="fullname" placeholder="Ваше имя">
+                            <div class="error-msg">Заполните поле</div>
+                        </div>
                         <div class="form-group">
                             <input class="input-text" type="text" name="name" placeholder="Ваше имя">
                             <div class="error-msg">Заполните поле</div>
                         </div>
                         <div class="form-group">
-                            <input class="input-text" type="text" name="name" placeholder="Ваш телефон">
+                            <input class="input-text empty-field" type="text" name="phone" placeholder="Ваш телефон">
                             <div class="error-msg"></div>
                         </div>
                         <div class="form-group">
@@ -305,12 +307,16 @@
             <div class="modal-content">
                 <div class="form-wrap">
                     <form class="feedback-form" action="fakepath" method="POST">
+                        <div class="form-group fly">
+                            <input class="input-text" type="text" name="fullname" placeholder="Ваше имя">
+                            <div class="error-msg"></div>
+                        </div>
                         <div class="form-group">
                             <input class="input-text" type="text" name="name" placeholder="Ваше имя">
                             <div class="error-msg"></div>
                         </div>
                         <div class="form-group">
-                            <input class="input-text" type="text" name="name" placeholder="Ваш телефон">
+                            <input class="input-text" type="text" name="phone" placeholder="Ваш телефон">
                             <div class="error-msg"></div>
                         </div>
                         <div class="form-group">
@@ -326,9 +332,26 @@
         </div>
     </div>
 
+    <div class="toast">
+        <div class="toast-header success">
+            <div class="toast-title"></div>
+            <button class="toast-close" data-action="hide">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" fill="#ffffff"></path></svg>
+            </button>
+        </div>
+        <div class="toast-body">
+            <p>Ваше сообщение успешно отправлено!</p>
+            <p>Мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+        <div class="toast-footer">
+            <button class="toast-confirm" data-action="hide">OK</button>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/tpl/js/jquery.fancybox.js"></script>
     <script src="assets/tpl/js/slick.js"></script>
     <script src="assets/tpl/js/main.js"></script>
+    <script src="assets/tpl/js/forms.js"></script>
 </body>
 </html>

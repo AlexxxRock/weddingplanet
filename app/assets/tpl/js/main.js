@@ -52,6 +52,7 @@
         var menu = document.querySelector(this.options.menu)
         menu.addEventListener('focus', function() {
             this.classList.add('active');
+            $('.nav').css('left', '0px');
             document.querySelector('body').classList.add('body-static')
             // document.querySelector('html').classList.add('body-static')
         }, true);
@@ -61,6 +62,7 @@
         var menu = document.querySelector(this.options.menu)
         menu.addEventListener('blur', function() {
             this.classList.remove('active');
+            $('.nav').css('left', '-300px');
             document.querySelector('body').classList.remove('body-static')
             // document.querySelector('html').classList.remove('body-static')
         }, true);
@@ -109,6 +111,51 @@ $(document).ready(function(){
                 mode: 'mobile'
             }]
         })
+
+        $('.main-nav').on('mousedown', function(e){
+            if ($('.main-nav').hasClass('active')) {
+                $('nav').addClass('swiping')
+                var start = e.clientX
+
+                console.log('start')
+                $(document).on('mousemove', function(event) {
+                    if ($('.nav').hasClass('swiping')) {
+                    
+                        var left = event.clientX - start
+        
+                        if( left < 0) {
+                            $('.nav').css('left',  left + 'px')
+                        } else {
+                            $('.nav').css('left',  '0px')
+                        }
+                    }
+                })
+            }
+
+            $(document).on('mouseup', function(ev, start){
+                if ($('.nav').hasClass('swiping')) {
+                    $('.nav').removeClass('swiping')
+                    
+
+                    var lpx = $('nav').css('left')
+                    var l = lpx.substr(0, lpx.length - 2)
+                    if (l < -160 ) {
+                        $('.nav').css('left', '-300px')
+                        $('.main-nav').removeClass('active')
+                        $('body').removeClass('body-static')
+                        
+                    } else if (l > -160) {
+                        $('.nav').css('left', '0px')
+                    }
+                    
+                    console.log('end', ++l)
+                }
+                
+            })    
+        })
+        
+        
+        
     }
 
     // Banner video
@@ -157,4 +204,15 @@ $(document).ready(function(){
         centerMode: false,
         focusOnSelect: true
     });
+
+    $(window).scroll(function(e){
+        parallax();
+    });
+
+    function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.banner-body').css('background-position-y', -(scrolled * 0.4)+'px');
+    }
+
+    $('.banner-content').removeClass('bottom-to-top')
 })
